@@ -1,13 +1,27 @@
 # SmartDrive_DS
-智驱-总线舵机/pwm舵机-一体化驱动控制器（SmartDrive Digital Servo）
+智驱 总线舵机/pwm舵机 一体化驱动控制器（SmartDrive Digital Servo）
 
-> 商业业务请联系773673787@qq
+> 773673787@qq.com
 
-![SmartDrive_BDCM2_Front](img/SmartDrive_DS_1.jpg)
+
+
+![SmartDrive_BDCM2_Front](img/SmartDrive_DS_3.jpg)
+
+
 
 **综述**
 
-该驱动是**“智驱"** 的串口总线舵机版本，该版本具有3个串口总线舵机接口，支持博创CDS55XX系列舵机、Robotics的Dynamixel系列总线舵机，使用单线半双工串口，1M的波特率，波特率可调。支持8路PWM舵机可轻松驱动普通50HZ的PWM舵机，且PWM分辨率达到了1/2000，控制更精准。支持更改PWM周期，可配置为330HZ以用于相应速度更快的数字舵机。对于PWM舵机内置了速度斜坡，速度限制等，以获取更平稳的运动。
+该驱动是**智驱** 的串口总线舵机版本，该版本具有3个串口总线舵机接口，支持博创CDS55XX系列舵机、Robotics的Dynamixel系列总线舵机，使用单线半双工串口，1M的波特率，波特率可调。支持8路PWM舵机可轻松驱动普通50HZ的PWM舵机，且PWM分辨率达到了1/2000，控制更精准。支持更改PWM周期，可配置为330HZ以用于相应速度更快的数字舵机。对于PWM舵机内置了速度斜坡，速度限制等，以获取更平稳的运动。
+
+
+
+**功能**
+
+- 支持舵机：博创CDS55XX系列、Robotics Dynamixel系列、普通PWM舵机、数字PWM舵机。
+- 通信能力：最高1M波特率串口半双工总线，DMA接收。
+- 最多支持：最多253个总线舵机、8个PWM舵机。
+- 控制方式：CAN总线、USART串口
+- 控制协议：SmartDrive SDK
 
 
 
@@ -24,21 +38,23 @@
 
 
 
-![SmartDrive_BDCM2_Front](img/SmartDrive_DS_3.jpg)
-
 **通信方式**
 
 - CAN总线，使用SmartDrive SDK可以快速的集成到系统中，使用起来非常方便。
 - *USART*（串口），默认115200通信速率，使用SmartDrive SDK。
 - USB，使用VCP协议直接连接电脑，与上位机进行通信，可直接对控制器进行调试，配置参数。
 
-![SmartDrive_BDCM2_Front](img/SmartDrive_DS_4.jpg)
+
 
 **SmartDrive SDK**
 
 SmartDrive SDK是专为SmartDrive系列驱动器开发的通信协议，支持CAN 和 USART两种方式通信，现主要支持STM32 F1、F4系列，使用HAL库。
 
 为了使SmartDrive系列驱动的开发变得简单，自带了很多例程，对通信协议部分做了单独的解耦合，确保使用HAL库的用户可以很轻松的移植上手。 
+
+
+
+![SmartDrive_BDCM2_Front](img/SmartDrive_DS_4.jpg)
 
 
 
@@ -50,3 +66,5 @@ SmartDrive SDK是专为SmartDrive系列驱动器开发的通信协议，支持CA
 
 
 ![SmartDrive_BDCM2_Front](img/SmartDrive_DS_5.jpg)
+
+![SmartDrive_BDCM2_Front](img/SmartDrive_DS_1.jpg)
