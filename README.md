@@ -11,7 +11,7 @@
 
 **综述**
 
-该驱动是**智驱** 的串口总线舵机版本，该版本具有3个串口总线舵机接口，支持博创CDS55XX系列舵机、Robotics的Dynamixel系列总线舵机，使用单线半双工串口，1M的波特率，波特率可调。支持8路PWM舵机可轻松驱动普通50HZ的PWM舵机，且PWM分辨率达到了1/2000，控制更精准。支持更改PWM周期，可配置为330HZ以用于相应速度更快的数字舵机。对于PWM舵机内置了速度斜坡，速度限制等，以获取更平稳的运动。
+该驱动是 **智驱系列** 的串口总线舵机版本，该版本具有3个串口总线舵机接口，支持博创CDS55XX系列舵机、Robotics的Dynamixel系列总线舵机，使用单线半双工串口，1M的波特率，波特率可调。支持8路PWM舵机可轻松驱动普通50HZ的PWM舵机，且PWM分辨率达到了1/2000，控制更精准。支持更改PWM周期，可配置为330HZ以用于相应速度更快的数字舵机。对于PWM舵机内置了速度斜坡，速度限制等，以获取更平稳的运动。
 
 
 
@@ -52,19 +52,22 @@ SmartDrive SDK是专为SmartDrive系列驱动器开发的通信协议，支持CA
 
 为了使SmartDrive系列驱动的开发变得简单，自带了很多例程，对通信协议部分做了单独的解耦合，确保使用HAL库的用户可以很轻松的移植上手。 
 
-
+![](img/uptech_protocol.pdf_page_01.jpg)
+![](img/uptech_protocol.pdf_page_02.jpg)
+![](img/uptech_protocol.pdf_page_03.jpg)
+![](img/uptech_protocol.pdf_page_04.jpg)
+![](img/uptech_protocol.pdf_page_05.jpg)
+![](img/uptech_protocol.pdf_page_06.jpg)
+![](img/uptech_protocol.pdf_page_07.jpg)
+![](img/uptech_protocol.pdf_page_08.jpg)
+![](img/uptech_protocol.pdf_page_09.jpg)
+![](img/uptech_protocol.pdf_page_10.jpg)
+![](img/uptech_protocol.pdf_page_11.jpg)
+![](img/uptech_protocol.pdf_page_12.jpg)
+![](img/uptech_protocol.pdf_page_13.jpg)
 
 ![SmartDrive_BDCM2_Front](img/SmartDrive_DS_4.jpg)
-
-
-
-
 ![SmartDrive_BDCM2_Front](img/SmartDrive_DS_2.jpg)
-
 ![SmartDrive_BDCM2_Front](img/SmartDrive_DS_3.jpg)
-
-
-
 ![SmartDrive_BDCM2_Front](img/SmartDrive_DS_5.jpg)
-
 ![SmartDrive_BDCM2_Front](img/SmartDrive_DS_1.jpg)
